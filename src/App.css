@@ -1,38 +1,89 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+}
+.header-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.input-button-group {
+  display: flex;
+  align-items: center;
+}
+.input-button-group input[type="text"] {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #d97b17;;
+border-radius: 5px;
+}
+button {
+  background-color: #d97b17;
+  color: #fff;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button-q {
+background: #fefefe;
+border-radius: 50%;
+padding: 1px;
+width: 25px;
+height: 25px;
+margin-right: 5px;
+color: #d97b17;
+}
+h1 {
+  margin: 10px 100px 10px 20px;
+color: #d97b17;
+}
+@media (max-width: 600px) {
+  .header-content {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  .input-button-group {
+      flex-direction: column;
+  }
+  .input-button-group input[type="text"] {
+      margin-right: 0;
+      margin-bottom: 5px;
+      border-radius: 10px;
+  }
+
+h1{
+text-align: center;
+margin: 1rem 0px;
+}
+}
+header, main, footer {
+  padding: 20px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table, th, td {
+  border: 1px solid #000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.parentDiv{
+display: flex;
+justify-content:center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dateCol{
+  background-color: #d97b17;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subData{
+  background-color: #c1c6cb;
 }
